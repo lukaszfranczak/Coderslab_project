@@ -2,8 +2,8 @@
 <html lang="pl-PL">
 <head>
     <meta charset="UTF-8">
-    <title>CodersLab</title>
-    <!--<link rel="stylesheet" href="css/style.css">-->
+    <title>RaceChrono laptimer data presenter</title>
+    <link rel="stylesheet" href="css/style.css">
     <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
     <script src="./js/out.js"></script>
@@ -12,15 +12,20 @@
 <body>
 
 <!--Dodać kolejne selecty do kolejnych linii-->
-<section>
-    <label for="X-axis">X-axis</label>
-    <select id="X-axis" name="X-axis"></select>
-    <!--<label for="Y-axis">Y-axis</label>-->
-    <!--<select id="Y-axis" name="Y-axis"></select>-->
+<section class="chart">
+    <label for="Y-axis-1">Y-axis</label>
+    <select id="Y-axis-1" name="Y-axis-1"></select>
 </section>
 <canvas id="canvas"></canvas>
 
-
+<section class="video">
+    <video id="video-file" src='' controls='true' height="200px" width="800px"></video>
+    <input id="video-file-upload" type="file"/>
+    <div id="progress-wrp">
+        <div class="progress-bar"></div>
+        <div class="status">0%</div>
+    </div>
+</section>
 
 </body>
 </html>
